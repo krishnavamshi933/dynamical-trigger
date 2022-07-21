@@ -17,12 +17,12 @@ pipeline {
 
         stage('Checkout code from Git') {
             steps {
-                dir("grv"){
+                
                 script {
-				checkout_git.checkout_git("grv")
+				checkout_git.checkout_git()
 				       }
                 
-                }
+                
             }
         }
         
